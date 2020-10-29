@@ -43,7 +43,7 @@ a{
    text-align: center;
    padding: 20px;
    z-index: 2;
-   margin: 0 auto;
+   margin: 0px auto;
 }
 h2{
     font-size: 36px;
@@ -64,6 +64,7 @@ h2{
     font-size: 20px;
     text-align: center;
     position: relative;
+    padding: 20px;
 }
 .skill-title::before,.skill-title::after{
     width: 13%;
@@ -78,4 +79,21 @@ h2{
 }
 .skill-title::after{
     right: 25%;
+}
+.feature-group{
+    display: flex; 
+}
+.feature{
+     text-align: center;
+     margin-top: 30px;
+}
+.feature img{
+   border-radius: 50%;
+   margin-bottom: 10px;
+}
+.feature p{
+    text-align: left;
+    line-height: 1.2;
+    padding: 20px;
+    margin-left: 15px;
 }
