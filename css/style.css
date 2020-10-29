@@ -160,3 +160,102 @@ h2{
     margin-top: 15%;
     margin-left: 60%;
 }
+.booking{
+    display: flex;
+    width: 100%;
+}
+.booking-title{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+.map{
+    padding: 10px;
+    width: 50%;
+}
+.content{
+    padding: 5px;
+    width: 50%;
+}
+.content label{
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+#name,#phone,#email,#people{
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.content p{
+    display: block;
+    margin-top: 15px;
+}
+#yes,#no{
+    display:inline-block;
+    margin: 10px;
+    margin-top: 15px;
+}
+.content-btn{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70%;
+}
+input[type=submit],input[type=reset]{
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+input[type=submit]{
+    background-color: #F56C23;
+    margin-right: 10px;
+}
+input[type=reset]{
+    background-color: rgba(0,0,0,0.35);
+}
+.footer{
+    background-color:#efe9e7 ;
+    display: flex;
+    padding: 40px;
+    margin-top: 20px;
+}
+.about{
+    width: 33.333%;
+}
+.about p{
+    line-height: 1.5;
+}
+h6{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contact{
+    width: 33.333%;
+    margin-left: 20px;
+}
+.contact li{
+    line-height: 1.5;
+    list-style-type: disc;
+    margin-left:20px ;
+}
+.link a{
+    display: block;
+    color: #3d1101;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.social-group{
+    display: flex;
+    justify-content: space-around;
+}
+.social-group img{
+    width: 36px;
+    height: 36px;
+    display: block;
+}
