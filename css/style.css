@@ -1,0 +1,81 @@
+.wrap{
+    max-width:1000px;
+    margin: 0 auto;
+    font-family: 微軟正黑體;
+    color: #3d1101;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.hero{
+    background-image: url(../images/header_desktop.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 420px;
+    margin-top: -20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+}
+.menu>li{
+   margin: 0 30px;
+   font-weight: 900;
+}
+.slogan{
+   width: 450px;
+   height: 150px;
+   background: rgba(59, 59, 59, 0.5); 
+   color: #fff;
+   text-align: center;
+   padding: 20px;
+   z-index: 2;
+   margin: 0 auto;
+}
+h2{
+    font-size: 36px;
+    padding-top:10px;
+}
+.slogan-title{
+    padding-top: 20px;
+}
+.slogan-title span{
+    margin-top: 10px;
+}
+.skill{
+    background: #efe9e7;
+    padding: 20px;
+    margin-top: -20px;
+}
+.skill-title{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+.skill-title::before,.skill-title::after{
+    width: 13%;
+    height: 2px;
+    background: #3d1101;
+    content: "";
+    position: absolute;
+    top: 50%;
+}
+.skill-title::before{
+    left: 25%;
+}
+.skill-title::after{
+    right: 25%;
+}
