@@ -64,6 +64,9 @@ a{
         background-image: url(../images/header_mobile.png);
         background-size: cover;
     }
+    .logo a{
+        margin-left: 5px;
+    }
 }
 .slogan{
    width: 450px;
