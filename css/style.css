@@ -244,11 +244,16 @@ h6{
     list-style-type: disc;
     margin-left:20px ;
 }
-.link a{
+.link h2{
     display: block;
     color: #3d1101;
-    font-weight: bold;
-    margin-bottom: 20px;
+    background-image: url(../images/logo_l.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+    margin-bottom: 10px;
 }
 .social-group{
     display: flex;
