@@ -11,22 +11,28 @@ a{
 .hero{
     background-image: url(../images/header_desktop.png);
     background-position: center;
-    background-size: 100%;
     background-repeat: no-repeat;
+    max-width: 100%;
     height: 420px;
-    margin-top: -20px;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 30px;
+    padding: 20px 30px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
 }
-.logo{
-    font-size: 24px;
-    font-weight: 900;
-    color: #fff;
+.logo a{
+    display: block;
+    background-image: url(../images/logo_w\ null.svg);
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+    width: 120px;
+    height: 24px;
     cursor: pointer;
+    margin-left: 20px;
 }
 .menu{
     display: flex;
@@ -34,6 +40,30 @@ a{
 .menu>li{
    margin: 0 30px;
    font-weight: 900;
+}
+.hamburger a{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+}
+@media(max-width:767px){
+    .logo a{
+        margin-left: 30px;
+    }
+    .menu{
+       display: none; 
+    }
+    .hamburger a{
+        display: block;
+        right: 50px;
+    }
+}
+@media(max-width:365px){
+    .hero{
+        background-image: url(../images/header_mobile.png);
+        background-size: cover;
+    }
 }
 .slogan{
    width: 450px;
@@ -43,7 +73,7 @@ a{
    text-align: center;
    padding: 20px;
    z-index: 2;
-   margin: 0px auto;
+   margin: 50px auto;
 }
 h2{
     font-size: 36px;
@@ -64,6 +94,7 @@ h2{
     font-size: 24px;
     text-align: center;
     position: relative;
+    line-height: 1.5;
     padding: 20px;
 }
 .skill-title::before,.skill-title::after{
@@ -79,6 +110,14 @@ h2{
 }
 .skill-title::after{
     right: 23%;
+}
+@media(max-width:767px){
+    .skill-title::before,.skill-title::after{
+        display: none;
+    }
+    .skill-title{
+        line-height: 1.5;
+    }
 }
 .feature-group{
     display: flex; 
@@ -99,6 +138,19 @@ h2{
     line-height: 1.2;
     padding: 20px;
     margin-left: 15px;
+}
+@media(max-width:767px){
+    .feature-group{
+        flex-wrap: wrap;
+    }
+    .feature img{
+        float: left;
+        padding: 30px;
+        margin-bottom: 0;
+    }
+    .feature h4{
+        margin-top: 80px;
+    }
 }
 .chef{
     background: #3d1101;
@@ -125,6 +177,23 @@ h2{
 }
 .chef-text span{
     font-style: italic;
+}
+@media(max-width:767px){
+    .chef{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .chef-img{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center; 
+    }
+    .chef-text{
+        margin-top: 0;
+        width: 75%;
+
+    }
 }
 .feedback{
     background: #efe9e7;
@@ -160,12 +229,34 @@ h2{
     margin-top: 15%;
     margin-left: 60%;
 }
+@media(max-width:767px){
+    .feedback-title{
+        margin-top: -20px;
+        padding-top: -20px;
+    }
+    .think-group{
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .think{
+        margin: 20px auto;
+    }
+    .think h4{
+        left: 20%;
+    }
+    .think span{
+        margin-top: 10%;
+        margin-left: 70%;
+    }
+}
 .booking{
     display: flex;
     width: 100%;
 }
 .booking-title{
     text-align: center;
+    line-height: 1.5;
     font-size: 24px;
     padding: 20px;
 }
@@ -219,6 +310,12 @@ input[type=submit]{
 input[type=reset]{
     background-color: rgba(0,0,0,0.35);
 }
+@media(max-width:767px){
+    .booking{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .footer{
     background-color:#efe9e7 ;
     display: flex;
@@ -263,4 +360,33 @@ h6{
     width: 36px;
     height: 36px;
     display: block;
+}
+@media(max-width:767px){
+    .footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .about{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .contact{
+        width: 60%;
+        margin-bottom: 20px;
+        margin-left: -9.5px;
+    }
+    .link{
+        width: 60%;
+    }
+    .link h2{
+        background-size: 50%;
+        margin-top: 20px;
+    }
+    .social-group{
+        justify-content: flex-start;
+    }
+    .social-group img{
+        margin-right: 20px;
+    }
 }
