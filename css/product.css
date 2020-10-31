@@ -90,6 +90,97 @@ h2{
 .slogan-title span{
     margin-top: 10px;
 }
+/* sidebar */
+.product{
+    display: flex;
+}
+.sidebar{
+    background-color: #efe9e7;
+    padding: 20px;
+    width: 25%;
+}
+.sidebar h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.sidebar i{
+    padding-right: 10px;
+    font-size: 36px;
+}
+.list-group{
+    padding: 10px;
+}
+.list{
+    display: block;
+    color: #3d1101;
+    font-size: 20px;
+    line-height: 2.3;
+    border-bottom: 1px solid #3d1101;
+}
+.content{
+    background:#efe9e7;
+    width: 75%;
+    padding: 20px;  
+}
+.searchbar{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+.searchbar input{
+    width: 60%;
+    height: 32px;
+    border: 2px solid #3d1101;
+    border-right:none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius:2px;
+}
+.searchbar button{
+    width: 32px;
+    height: 32px;
+    border: 2px solid #3d1101;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius:2px;
+    color: #fff;
+    background-color: #3d1101;
+    margin-left: -5px;
+}
+.shopping{
+    display: flex;
+    margin-left: 110px;
+    position: relative;
+}
+.shopping li{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.shopping li a{
+    color: #3d1101;
+}
+.cart{
+    position: absolute;
+    left: 60px;
+    bottom: 5px;
+    border-left: 1px solid #3d1101;
+    margin-left: 5px;
+    padding-left: 8px;
+}
+.quantity{
+    position: absolute;
+    font-size: 12px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #f56c23;
+}
+
+
+
+
+
 /* footer */
 .footer{
     background-color:#efe9e7 ;
