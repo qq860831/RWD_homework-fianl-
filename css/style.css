@@ -38,8 +38,22 @@ a{
     display: flex;
 }
 .menu>li{
-   margin: 0 30px;
+   margin: 0 10px;
    font-weight: 900;
+}
+.menu li:hover{
+    background: rgba(255, 255, 255,0.5);
+}
+.menu li:active{
+    background-color: #f56c23;
+}
+.menu li a{
+    display: block;
+    color: white;
+    padding: 15px 20px;
+}
+.menu li a:hover{
+    color: black;
 }
 .hamburger a{
     display: none;
