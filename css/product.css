@@ -131,6 +131,11 @@ h2{
     line-height: 2.3;
     border-bottom: 1px solid #3d1101;
 }
+.list:hover{
+    color: #fff;
+    background-color: #3d1101;
+    transition: all 0.3s;
+}
 .content{
     background:#efe9e7;
     width: 75%;
@@ -189,6 +194,34 @@ h2{
     text-align: center;
     color: #fff;
     background-color: #f56c23;
+}
+@media(max-width:767px){
+    .product{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar h4{
+        margin-left: 10px;
+    }
+    .content{
+        width: 100%;
+    }
+    .searchbar{
+        margin-top: -30px;
+    }
+    .searchbar input{
+        width: 80%;
+    }
+    .shopping{
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .buy{
+        display: block;
+        margin-bottom: 10px;
+    }
 }
 /* card-group */
 .card-group{
@@ -262,7 +295,15 @@ h2{
     top: 8px;
     left: 10px;
 }
-
+@media(max-width:767px){
+    .tag{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 
 /* footer */
