@@ -136,6 +136,10 @@ h2{
     background-color: #3d1101;
     transition: all 0.3s;
 }
+.list-active{
+    background-color: #3d1101;
+    color: #fff;
+}
 .content{
     background:#efe9e7;
     width: 75%;
@@ -294,6 +298,7 @@ h2{
     font-size: 24px;
     top: 8px;
     left: 10px;
+    display: block;
 }
 @media(max-width:767px){
     .tag{
