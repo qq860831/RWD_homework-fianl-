@@ -372,8 +372,9 @@ h2{
     width: 50%;
 }
 .content{
-    padding: 5px;
+    padding: 15px;
     width: 50%;
+    margin-bottom: 30px;
 }
 .content label{
     display: inline-block;
@@ -430,7 +431,7 @@ input[type=reset]{
     background-color:#efe9e7 ;
     display: flex;
     padding: 40px;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 .about{
     width: 33.333%;
@@ -538,7 +539,7 @@ h6{
     background-color: #3d1101;
     color: #fff;
 }
-.content{
+.shopgroup{
     background:#efe9e7;
     width: 75%;
     padding: 20px;  
