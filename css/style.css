@@ -1,3 +1,60 @@
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto ;
+}
+/* index */
 .wrap{
     max-width:1000px;
     margin: 0 auto;
@@ -15,6 +72,7 @@ a{
     max-width: 100%;
     height: 420px;
 }
+/* navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -109,6 +167,7 @@ a{
         margin-left: 5px;
     }
 }
+/* slogan */
 .slogan{
    width: 450px;
    height: 150px;
@@ -129,6 +188,7 @@ h2{
 .slogan-title span{
     margin-top: 10px;
 }
+/* skill */
 .skill{
     background: #efe9e7;
     padding: 20px;
@@ -196,6 +256,7 @@ h2{
         margin-top: 80px;
     }
 }
+/* chef */
 .chef{
     background: #3d1101;
     color: #fff;
@@ -239,6 +300,7 @@ h2{
 
     }
 }
+/* feedback */
 .feedback{
     background: #efe9e7;
     padding: 20px;
@@ -294,6 +356,7 @@ h2{
         margin-left: 70%;
     }
 }
+/* booking */
 .booking{
     display: flex;
     width: 100%;
@@ -360,6 +423,9 @@ input[type=reset]{
         align-items: center;
     }
 }
+
+
+/* footer */
 .footer{
     background-color:#efe9e7 ;
     display: flex;
@@ -433,5 +499,353 @@ h6{
     }
     .social-group img{
         margin-right: 20px;
+    }
+}
+
+/* sidebar */
+.product{
+    display: flex;
+}
+.sidebar{
+    background-color: #efe9e7;
+    padding: 20px;
+    width: 25%;
+}
+.sidebar h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.sidebar i{
+    padding-right: 10px;
+    font-size: 36px;
+}
+.list-group{
+    padding: 10px;
+}
+.list{
+    display: block;
+    color: #3d1101;
+    font-size: 20px;
+    line-height: 2.3;
+    border-bottom: 1px solid #3d1101;
+}
+.list:hover{
+    color: #fff;
+    background-color: #3d1101;
+    transition: all 0.3s;
+}
+.list-active{
+    background-color: #3d1101;
+    color: #fff;
+}
+.content{
+    background:#efe9e7;
+    width: 75%;
+    padding: 20px;  
+}
+.searchbar{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+.searchbar input{
+    width: 60%;
+    height: 32px;
+    border: 2px solid #3d1101;
+    border-right:none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius:2px;
+}
+.searchbar button{
+    width: 32px;
+    height: 32px;
+    border: 2px solid #3d1101;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius:2px;
+    color: #fff;
+    background-color: #3d1101;
+    margin-left: -5px;
+}
+.shopping{
+    display: flex;
+    margin-left: 110px;
+    position: relative;
+}
+.shopping li{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.shopping li a{
+    color: #3d1101;
+}
+.cart{
+    position: absolute;
+    left: 60px;
+    bottom: 5px;
+    border-left: 1px solid #3d1101;
+    margin-left: 5px;
+    padding-left: 8px;
+}
+.quantity{
+    position: absolute;
+    font-size: 12px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #f56c23;
+}
+@media(max-width:767px){
+    .product{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar h4{
+        margin-left: 10px;
+    }
+    .content{
+        width: 100%;
+    }
+    .searchbar{
+        margin-top: -30px;
+    }
+    .searchbar input{
+        width: 80%;
+    }
+    .shopping{
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .buy{
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+/* card-group */
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag{
+    width: 30%;
+    box-shadow: 3px 3px 4px #333;
+    margin: 10px;
+}
+.hotfood{
+    display: none;
+}
+.card{
+    text-align: center;
+    position: relative;
+    padding-bottom: 5px;
+}
+.card img{
+    height: 110px;
+}
+.card h5{
+    font-size: 20px;
+    padding: 20px;   
+}
+.name{
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.border{
+    width: 90px;
+    height: 2px;
+    background-color: #3d1101;
+    margin: 10px auto;
+}
+.price{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.addcar{
+    display: block;
+    border: 4px solid #f56c23;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    color: #f56c23;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.addcar .fa-shopping-cart{
+    padding-right: 10px;
+}
+.addcar:hover{
+    background-color: #F56C23;
+    color: white;
+}
+.addcar:active{
+    background-color: #e23d01;
+    border: #e23d01 4px solid;
+}
+.heart{
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 8px;
+    left: 10px;
+    display: block;
+}
+@media(max-width:767px){
+    .tag{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+        height: 100%;
+    }
+}
+/* login */
+.container{
+    background-color: #efe9e7;
+}
+.container h4{
+    background-image: url(../images/logo_l.svg);
+    background-repeat: no-repeat;
+    font-size: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto;
+}
+.login{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.login-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+.login form,.registerlow{
+    border-top: 2px solid #f56c23;
+    margin: 20px 0;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 2px;
+    padding: 15px;
+}
+form h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.mailgroup,.passwordgroup{
+    position: relative;
+    margin-bottom: 10px;
+}
+#mail,#password{
+    display: block;
+    width: 100%;
+    padding: 8px 26px;
+    border-radius: 3px;
+    outline: 0;
+    border: 1px solid gray;
+    margin-top: 3px;
+}
+.fa-envelope-o,.fa-lock{
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    font-size: 20px;
+}
+.lock2{
+    position: absolute;
+    top: 62px;
+    left: 5px;
+    font-size: 20px;
+}
+.forget{
+    display: block;
+    color:#f56c23;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.signup,input[type=submit]{
+    display: block;
+    width: 48%;
+    text-align: center;
+    border-radius:3px ;
+    font-size: 14px;
+    margin-left: 3px;
+}
+.signup{
+    float: left;
+    background-color:gray;
+    padding: 10.5px;
+    margin-right: 5px;
+}
+ input[type=submit]{
+    color: #fff;
+    background-color: #f56c23;
+    margin-left: 2px;
+    padding: 8px 0;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+/* register */
+.register{
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.registerlow{
+    padding: 20px;
+    display: flex;
+    position: relative;
+}
+.registerlow h5{
+    position: absolute;
+    left: 43%;
+}
+.l-flex,.r-flex{
+    flex-basis: 50%;
+    margin-top: 45px;
+}
+.register h5{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.signin{
+    display: block;
+    color:#f56c23;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.r-flex input[type="submit"]{
+    width: 125px;
+    margin-left: 55%;
+    margin-top: 30px;
+}
+@media(max-width:767px){
+    .registerlow{
+        display:flex;
+        flex-direction: column;
+    }
+    .r-flex{
+        margin-top: 20px;
+    }
+    .r-flex input[type="submit"]{
+        margin-left: 78%;
     }
 }
