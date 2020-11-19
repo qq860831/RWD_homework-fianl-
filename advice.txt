@@ -10,15 +10,15 @@ product.html 頁面在 790px 內容超出版面，建議調整一下排版，以
 
 head 標籤可以多一些描述，例如 fb icon、meta 等等，詳情可瀏覽第十章 head 細節
 
-.slogan 的定位建議不要用 margin 來推，可以使用 flex 或設定相對於父元素的位置做絕對定位
+(ok).slogan 的定位建議不要用 margin 來推，可以使用 flex 或設定相對於父元素的位置做絕對定位
 
-.feature-group 的內容，請用 ul li 結構，那裡是主題式列表
+(ok).feature-group 的內容，請用 ul li 結構，那裡是主題式列表
 
-.chef, .skill, .feedback, .product 等可以寫在外面的 section 上，減少 div 的使用可以讓網頁更簡潔
+(ok).chef, .skill, .feedback, .product 等可以寫在外面的 section 上，減少 div 的使用可以讓網頁更簡潔
 
-.think h4 不建議將定位寫死，並排可使用 flex
+(--).think h4 不建議將定位寫死，並排可使用 flex
 
-.think span 定位不建議透過 margin 來設定，靠右可使用 flex 來控制定位
+(ok).think span 定位不建議透過 margin 來設定，靠右可使用 flex 來控制定位
 
 index.html 中 .content 可以寫到裡面的 form 上，減少 div 的使用可以讓網頁更簡潔
 
