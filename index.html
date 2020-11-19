@@ -87,33 +87,31 @@
                     </li>
                 </ul>
         </section>
-        <!-- booking -->
-        <section  class="booking">
-            <h3 class="booking-title">我們的位置不太夠坐<br>要不要先訂位呢?</h3>
+        <!-- booking --> 
+        <h3 class="booking-title">我們的位置不太夠坐<br>要不要先訂位呢?</h3>
+        <section class="booking">
                 <div class="map">
                     <img src="./images/Map.png" alt="">
                 </div>
-                <div class="content">
-                    <form action="POST">
-                        <label for="name">姓名</label>
-                        <input type="text" id=name placeholder="六角講師吃尾牙">
-                        <label for="phone">電話</label>
-                        <input type="tel" id=phone placeholder="03-2132435">
-                        <label for="email">信箱</label>
-                        <input type="email" id=email placeholder="example@gmail.com">
-                        <label for="people">人數</label>
-                        <input type="text" id=people>
-                        <p>是否需要素食?</p>
-                        <label class="yes" for="yes">是</label>
-                        <input type="radio" name="vaget" id="yes" value="yes">
-                        <label class="no" for="no">否</label>
-                        <input type="radio" name="vaget" id="no" value="no">
-                        <div class="content-btn">
-                            <input type="submit" value="送出">
-                            <input type="reset" value="取消">
-                        </div>
-                    </form>
-                </div>
+                <form action="POST" class="content">
+                    <label for="name">姓名</label>
+                    <input type="text" id=name placeholder="六角講師吃尾牙">
+                    <label for="phone">電話</label>
+                    <input type="tel" id=phone placeholder="03-2132435">
+                    <label for="email">信箱</label>
+                    <input type="email" id=email placeholder="example@gmail.com">
+                    <label for="people">人數</label>
+                    <input type="text" id=people>
+                    <p>是否需要素食?</p>
+                    <label class="yes" for="yes">是</label>
+                    <input type="radio" name="vaget" id="yes" value="yes">
+                    <label class="no" for="no">否</label>
+                    <input type="radio" name="vaget" id="no" value="no">
+                    <div class="content-btn">
+                        <input type="button" value="送出">
+                        <input type="reset" value="取消">
+                    </div>
+                </form>
         </section>
         <!-- footer -->
         <footer class="footer">

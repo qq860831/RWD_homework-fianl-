@@ -20,29 +20,27 @@ head 標籤可以多一些描述，例如 fb icon、meta 等等，詳情可瀏�
 
 (ok).think span 定位不建議透過 margin 來設定，靠右可使用 flex 來控制定位
 
-index.html 中 .content 可以寫到裡面的 form 上，減少 div 的使用可以讓網頁更簡潔
+(ok)index.html 中 .content 可以寫到裡面的 form 上，減少 div 的使用可以讓網頁更簡潔
 
-index.html 中 .content-btn 定位不建議透過 margin 來設定，靠右可使用 justify-content: flex-end;
+(ok)index.html 中 .content-btn 定位不建議透過 margin 來設定，靠右可使用 justify-content: flex-end;
 
-index.html 中 .content-btn 請設計 hover 樣式，提升使用者回饋
+(ok)index.html 中 .content-btn 請設計 hover 樣式，提升使用者回饋
 
-指定樣式不建議使用 id 來設定，例如: 將 #name 改為 .name
+(--)指定樣式不建議使用 id 來設定，例如: 將 #name 改為 .name
 
-.searchbar 不需要設定 width ，因為 div 是區塊元素會自適應父元素寬度
+(ok).searchbar 不需要設定 width ，因為 div 是區塊元素會自適應父元素寬度
 
-.searchbar button 可以加上 cursor: pointer，讓滑鼠滑過去時會有手出現
+(ok).searchbar button 可以加上 cursor: pointer，讓滑鼠滑過去時會有手出現
 
-.shopping 定位不建議透過 margin 來設定，靠右可使用 flex 來控制定位
+(--).shopping 定位不建議透過 margin 來設定，靠右可使用 flex 來控制定位
 
-.cart 不建議將定位寫死，靠右可使用 flex 來控制定位
+(ok).cart 不建議將定位寫死，靠右可使用 flex 來控制定位
 
-.card-group 的內容，請用 ul li 結構，那裡是主題式列表
+(ok).card-group 的內容，請用 ul li 結構，那裡是主題式列表
 
 .feature 的部分在 319px ~ 500px 過於擁擠，建議改在 767px 就變成單欄，以提升使用者體驗
 
 .think 的部分在 473px 以下有跑版問題，建議調整一下版面，以提升使用者體驗
-
-index.html 中 input[type=submit], input[type=reset] 請設計 hover 樣式，提升使用者回饋
 
 login.html 中 .signup, input[type=submit] 請設計 hover 樣式，提升使用者回饋
 

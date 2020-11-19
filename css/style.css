@@ -408,22 +408,28 @@ h2{
 }
 .content-btn{
     display: flex;
-    margin-top: 20px;
-    margin-left: 70%;
+    justify-content: flex-end;
 }
-input[type=submit],input[type=reset]{
+input[type=button],input[type=reset]{
     color: #fff;
     border-radius: 3px;
     border: 0;
-    padding: 8px 20px;
+    padding: 8px 10px;
     cursor: pointer;
+    margin: 0;
 }
-input[type=submit]{
+input[type=button]{
     background-color: #F56C23;
     margin-right: 10px;
 }
+input[type=button]:hover{
+    background-color: #e23d01;
+}
 input[type=reset]{
     background-color: rgba(0,0,0,0.35);
+}
+input[type=reset]:hover{
+    background-color:rgba(0,0,0,0.5);
 }
 @media(max-width:767px){
     .booking{
@@ -553,7 +559,6 @@ h6{
 }
 .searchbar{
     display: flex;
-    width: 100%;
     padding: 20px;
 }
 .searchbar input{
@@ -573,23 +578,27 @@ h6{
     color: #fff;
     background-color: #3d1101;
     margin-left: -5px;
+    cursor: pointer;
 }
 .shopping{
     display: flex;
-    margin-left: 110px;
+    justify-content: flex-end;
+    margin-left: 20%;
     position: relative;
 }
 .shopping li{
+    display: inline-block;
+}
+.buy{
+    display: flex;
     margin-top: 10px;
+    margin-right: 10px;
     font-size: 16px;
 }
 .shopping li a{
     color: #3d1101;
 }
 .cart{
-    position: absolute;
-    left: 60px;
-    bottom: 5px;
     border-left: 1px solid #3d1101;
     margin-left: 5px;
     padding-left: 8px;
@@ -793,11 +802,15 @@ form h5{
     font-size: 14px;
     margin-left: 3px;
 }
+
 .signup{
     float: left;
-    background-color:gray;
+    background-color:rgb(204, 201, 201);
     padding: 10.5px;
     margin-right: 5px;
+}
+.signup:hover{
+    background-color: rgb(80, 79, 79);
 }
  input[type=submit]{
     color: #fff;
@@ -807,6 +820,9 @@ form h5{
     border: 0;
     cursor: pointer;
     outline: 0;
+}
+input[type=submit]:hover{
+    background-color: #e23d01;
 }
 /* register */
 .register{
@@ -839,6 +855,9 @@ form h5{
     color:#f56c23;
     margin-bottom: 20px;
     font-size: 14px;
+}
+.signin:hover{
+    background-color: #e23d01;
 }
 .r-flex input[type="submit"]{
     width: 125px;
