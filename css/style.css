@@ -477,12 +477,12 @@ input[type=reset]:hover{
     margin-top: -20px;
 }
 .about{
-    width: 33.333%;
+    max-width: 33.333%;
 }
 .about p{
     line-height: 1.5;
 }
-h6{
+.footer h6{
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -543,6 +543,26 @@ h6{
     }
     .social-group img{
         margin-right: 20px;
+    }
+}
+@media(max-width: 600px){
+    .footer h6{
+      width: 200%;
+    }
+    .about p{
+        display: block;
+        width: 200%;
+    }
+}
+@media(max-width:360px){
+    .footer h6{
+        font-size: 1.25rem;
+    }
+    .about p{
+        font-size: 0.8rem; 
+    }
+    .contact ul li{
+        font-size: 0.8rem;
     }
 }
 
