@@ -171,7 +171,7 @@ a{
 /* slogan */
 .slogan{
    width: 450px;
-   height: 150px;
+   height: auto;
    background: rgba(59, 59, 59, 0.5); 
    color: #fff;
    text-align: center;
@@ -194,6 +194,17 @@ h2{
 }
 .slogan-title span{
     margin-top: 10px;
+}
+@media(max-width:475px){
+    .slogan{
+        width: 80%;
+    }
+    .slogan h2{
+        font-size: 1.25rem;
+    }
+    .slogan p,span{
+        font-size: 0.8rem;
+    }
 }
 /* skill */
 .skill{
@@ -262,6 +273,21 @@ h2{
     .feature h4{
         margin-top: 80px;
     }
+    
+}
+@media(max-width:500px){
+    .feature-group{
+       flex-direction: column;
+       justify-content: center;
+    }
+    .feature img{
+        float: none;
+        padding: 0;
+        margin: 0;
+    }
+    .feature h4{
+        margin-top: 20px;
+    }
 }
 /* chef */
 .chef{
@@ -327,7 +353,7 @@ h2{
 .think img{
     border-radius: 50%;
 }
-.think h4{
+.think .title{
     position: absolute;
     top: 12%;
     left: 30%; 
@@ -352,15 +378,19 @@ h2{
         width: 70%;
         margin: 0 auto;
     }
-    .think{
-        margin: 20px auto;
-    }
-    .think h4{
-        left: 20%;
+    .think .title{
+        left: 25%;
     }
     .think span{
-        margin-top: 10%;
-        margin-left: 70%;
+        margin-top: 5%;
+        margin-left: 50%;
+    }
+}
+@media(max-width:500px){
+    .think .title{
+        position: absolute;
+        top: 15%;
+        left: 35%;
     }
 }
 /* booking */
@@ -522,7 +552,7 @@ h6{
 }
 .sidebar{
     background-color: #efe9e7;
-    padding: 20px;
+    padding: 30px 20px;
     width: 25%;
 }
 .sidebar h4{
@@ -614,6 +644,18 @@ h6{
     color: #fff;
     background-color: #f56c23;
 }
+@media(max-width:960px){
+    .sidebar{
+        width: 35%;
+    }
+    .shopping{
+        width: 30%;
+        margin: 0;
+    }
+    .shopgroup{
+        width: 70%;
+    }
+}
 @media(max-width:767px){
     .product{
         flex-direction: column;
@@ -628,18 +670,52 @@ h6{
         width: 100%;
     }
     .searchbar{
-        margin-top: -30px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
     }
     .searchbar input{
         width: 80%;
     }
     .shopping{
-        margin-left: 10px;
-        margin-top: 50px;
+        margin: 0;
+        width: 40%;
+    }
+    .shopgroup{
+        width: 100%;
+    }
+    .card-group{
+        width: 70%;
+        margin: 0 auto;
     }
     .buy{
         display: block;
         margin-bottom: 10px;
+    }
+}
+@media(max-width:475px){
+    .sidebar h4{
+        font-size: 1.5rem;
+    }
+    .shopgroup{
+        padding: 0;
+        width: 100%;
+    }
+    .searchbar{
+       width: 100%;
+       display: flex;
+       align-items:center;
+    }
+    .shopping{
+        width: 50%;
+        margin-right: 10px;
+    }
+    .card-group{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .tag{
+        padding-bottom:20px;
     }
 }
 /* card-group */
@@ -715,6 +791,11 @@ h6{
     left: 10px;
     display: block;
 }
+@media(max-width:960px){
+    .tag{
+        width: 45%;
+    }
+
 @media(max-width:767px){
     .tag{
         width: 100%;
@@ -794,6 +875,9 @@ form h5{
     margin-bottom: 20px;
     font-size: 14px;
 }
+.forget:hover{
+    text-decoration: underline;
+}
 .signup,input[type=submit]{
     display: block;
     width: 48%;
@@ -857,12 +941,15 @@ input[type=submit]:hover{
     font-size: 14px;
 }
 .signin:hover{
-    background-color: #e23d01;
+   text-decoration: underline;
 }
 .r-flex input[type="submit"]{
     width: 125px;
     margin-left: 55%;
     margin-top: 30px;
+}
+.r-flex input[type="submit"]:hover{
+    background-color: #e23d01;
 }
 @media(max-width:767px){
     .registerlow{
