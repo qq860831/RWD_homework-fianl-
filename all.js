@@ -12,7 +12,7 @@ $(document).ready(function (){
     });
 
     // 愛心選擇
-    $('.fa-heart-o').click(function(e){
+    $('.heart i').click(function(e){
         e.preventDefault(); //去掉a連結的作用
         $(this).toggleClass(' fa fa-heart-o');
         $(this).toggleClass(' fa fa-heart');
